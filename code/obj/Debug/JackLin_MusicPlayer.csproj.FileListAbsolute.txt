@@ -1,0 +1,15 @@
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\bin\Debug\JackLin_MusicPlayer.exe.config
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\bin\Debug\JackLin_MusicPlayer.exe
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\bin\Debug\JackLin_MusicPlayer.pdb
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\JackLin_MusicPlayer.csprojResolveAssemblyReference.cache
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\JackLin_MusicPlayer.JackLin_MusicPlayer.resources
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\JackLin_MusicPlayer.Properties.Resources.resources
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\JackLin_MusicPlayer.csproj.GenerateResource.Cache
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\JackLin_MusicPlayer.exe
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\JackLin_MusicPlayer.pdb
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\bin\Debug\TXTClass.dll
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\bin\Debug\Interop.WMPLib.dll
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\bin\Debug\AxInterop.WMPLib.dll
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\Interop.WMPLib.dll
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\AxInterop.WMPLib.dll
+c:\users\lala\documents\visual studio 2013\Projects\JackLin_MusicPlayer\JackLin_MusicPlayer\obj\Debug\JackLin_MusicPlayer.csproj.ResolveComReference.cache

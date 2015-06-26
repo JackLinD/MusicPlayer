@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEB95BAF-158E-4CC3-ACC3-D88B40BF7A0F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JackLin_MusicPlayer</RootNamespace>
+    <AssemblyName>JackLin_MusicPlayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TXTClass">
+      <HintPath>..\..\..\..\..\Desktop\临时店\TXTClass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JackLin_MusicPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JackLin_MusicPlayer.Designer.cs">
+      <DependentUpon>JackLin_MusicPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lrc.cs" />
+    <Compile Include="music.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowLrc.cs" />
+    <EmbeddedResource Include="JackLin_MusicPlayer.resx">
+      <DependentUpon>JackLin_MusicPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_new1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_new11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\播放.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\播放鼠标移入.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\暂停.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\暂停鼠标移入.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\皮肤.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\上一首.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\上一首鼠标移入.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下一首.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下一首鼠标移入.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\皮肤高亮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\喜欢高亮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\喜欢.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\添加高光.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\添加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_new111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\最小.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\最小鼠标移入.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭鼠标移入1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\进度条.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00033.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00044.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00055.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00066.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00077.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00088.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\++.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel6.BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel6.Backgroun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox13.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox12.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox121.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2222Image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
